@@ -7,7 +7,10 @@ class App extends Component {
     this.state = {
       boxes: [
         {
-          isXO: true,
+          isXO: false,
+        },
+        {
+          isXO: false,
         },
         {
           isXO: false,
@@ -19,19 +22,16 @@ class App extends Component {
           isXO: true,
         },
         {
-          isXO: true,
-        },
-        {
-          isXO: true,
+          isXO: false,
         },
         {
           isXO: false,
         },
         {
-          isXO: true,
+          isXO: false,
         },
         {
-          isXO: true,
+          isXO: false,
         },
       ]
     }
@@ -56,7 +56,8 @@ class App extends Component {
                                       onChoice={() => this.handleChoice(index)} />)
     return (
       <div className="container">
-        <h1>Tic-Tac-Toe</h1>
+        <h1>The Working Man's Tic-Tac-Toe</h1>
+          <p>Just click a symbol and it'll change&mdash;nothin' fancy</p>
              <div className="row">
               { BoxGrid }
             </div>
