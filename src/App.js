@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Screen from './Screen';
-import Button from './Button';
+import Boxes from './Boxes';
 
 class App extends Component {
   constructor() {
@@ -9,15 +8,14 @@ class App extends Component {
       question: '',
       answer: ''
     }
-    this.handleClick.bind(this);
   }
   render() {
     return (
-      <div className="frame">
-             <div className="calculator-title">
-                R_N Calculator
+      <div className="container">
+             <div className="row">
+                <h1>Tic-Tac-Toe</h1>
             </div>
-            <Screen question={this.state.question} answer={this.state.answer} />
+            <Boxes />
             </div>
     );
   }
