@@ -5,33 +5,43 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+     currentPlayer: 'X',
       boxes: [
         {
-          isXO: false,
+          isX: false,
+          powerOf: 0,
         },
         {
-          isXO: false,
+          isX: false,
+          powerOf: 1
         },
         {
-          isXO: false,
+          isX: false,
+          powerOf: 2
         },
         {
-          isXO: false,
+          isX: false,
+          powerOf: 3
         },
         {
-          isXO: true,
+          isX: false,
+          powerOf: 4
         },
         {
-          isXO: false,
+          isX: false,
+          powerOf: 5
         },
         {
-          isXO: false,
+          isX: false,
+          powerOf: 6
         },
         {
-          isXO: false,
+          isX: false,
+          powerOf: 7
         },
         {
-          isXO: false,
+          isX: false,
+          powerOf: 8
         },
       ]
     }
@@ -43,17 +53,18 @@ class App extends Component {
     const last = this.state.boxes.slice(position + 1);
     const newBoxes = [
       ...first,
-      {...clickedBox, isXO: !clickedBox.isXO},
+      {...clickedBox, isX: !clickedBox.isX},
       ...last
     ];
-    this.setState({'boxes': newBoxes});
+    this.setState({boxes: newBoxes});
     console.log(clickedBox);
+    this.setState({currentPlayer: 'O'});
   }
   render() {
     const { boxes } = this.state;
     const BoxGrid = boxes.map((box, index) => <Box key={ index }
-                                                  isXO = {box.isXO}
-                                      onChoice={() => this.handleChoice(index)} />)
+                                                   isX = {box.isX}
+                                                   onChoice={() => this.handleChoice(index)} />)
     return (
       <div className="container">
         <h1>The Working Man's Tic-Tac-Toe</h1>

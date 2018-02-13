@@ -1,1 +1,11 @@
+h1, p {
+    text-align: center;
+}
 
+div .col-md-4 {
+    text-align: center;
+}
+
+.symbol {
+    cursor: pointer;
+}
