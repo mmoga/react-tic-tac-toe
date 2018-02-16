@@ -12,12 +12,14 @@ div .col-md-4 {
 }
 
 .grid {
-    max-width: 500px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .box {
     border: 1px dashed grey;
-    width: 100%;
-    max-width: 150px;
-    height: 150px;
+    padding: 50px;
 }

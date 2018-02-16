@@ -8,39 +8,39 @@ class App extends Component {
      currentPlayer: 'X',
       boxes: [
         {
-          isX: '',
+          isX: true,
           powerOf: 0,
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 1
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 2
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 3
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 4
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 5
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 6
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 7
         },
         {
-          isX: '',
+          isX: true,
           powerOf: 8
         },
       ]
@@ -71,7 +71,7 @@ class App extends Component {
           <p>Just click a symbol and it'll change&mdash;nothin' fancy</p>
         
              <div className="d-flex justify-content-center">
-               <div className="row grid">
+               <div className="grid">
                 { BoxGrid }
               </div>
              </div>
