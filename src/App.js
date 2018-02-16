@@ -8,39 +8,39 @@ class App extends Component {
      currentPlayer: 'X',
       boxes: [
         {
-          isX: false,
+          isX: '',
           powerOf: 0,
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 1
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 2
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 3
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 4
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 5
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 6
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 7
         },
         {
-          isX: false,
+          isX: '',
           powerOf: 8
         },
       ]
@@ -69,9 +69,12 @@ class App extends Component {
       <div className="container">
         <h1>The Working Man's Tic-Tac-Toe</h1>
           <p>Just click a symbol and it'll change&mdash;nothin' fancy</p>
-             <div className="row">
-              { BoxGrid }
-            </div>
+        
+             <div className="d-flex justify-content-center">
+               <div className="row grid">
+                { BoxGrid }
+              </div>
+             </div>
       </div>
     );
   }

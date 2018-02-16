@@ -4,8 +4,20 @@ h1, p {
 
 div .col-md-4 {
     text-align: center;
+    padding: 0 !important;
 }
 
 .symbol {
     cursor: pointer;
+}
+
+.grid {
+    max-width: 500px;
+}
+
+.box {
+    border: 1px dashed grey;
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
 }
