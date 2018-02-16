@@ -13,8 +13,8 @@ render() {
     const symbol = this.props.isX ? 'Ex' : 'Oh';
     return (
         
-            <div className="box d-flex align-items-center justify-content-center">
-            <h1 className="symbol" onClick={this.props.onChoice}>{ symbol }</h1>
+            <div className="box d-flex align-items-center justify-content-center" onClick={this.props.onChoice}>
+            <h1 className="symbol">{ symbol }</h1>
             </div>
             
         );

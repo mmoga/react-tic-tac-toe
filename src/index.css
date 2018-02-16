@@ -9,6 +9,7 @@ div .col-md-4 {
 
 .symbol {
     cursor: pointer;
+    width: 51px;
 }
 
 .grid {
@@ -22,4 +23,5 @@ div .col-md-4 {
 .box {
     border: 1px dashed grey;
     padding: 50px;
+    user-select: none;
 }
